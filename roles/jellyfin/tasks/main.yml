@@ -21,6 +21,12 @@
           - "{{ jellyfin_tv_directory }}:/tv:{{ jellyfin_tv_permissions }}"
           - "{{ jellyfin_books_directory }}:/books:{{ jellyfin_books_permissions }}"
           - "{{ jellyfin_audiobooks_directory }}:/audiobooks:{{ jellyfin_audiobooks_permissions }}"
+        devices:
+          - /dev/dri/renderD128:/dev/dri/renderD128
+          - /dev/dri/card0:/dev/dri/card0
+        groups: # vim /etc/group
+          - "44" # video
+          - "109" # render
         ports:
           - "{{ jellyfin_port_http }}:8096"
         env:
