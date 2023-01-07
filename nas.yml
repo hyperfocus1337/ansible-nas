@@ -277,9 +277,9 @@
       tags:
         - nextcloud
 
-    - role: nomad
-      tags:
-        - nomad
+    # - role: nomad
+    #   tags:
+    #     - nomad
 
     - role: nzbget
       tags:
