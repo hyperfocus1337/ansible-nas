@@ -10,4 +10,6 @@ collections:
   - name: ansible.posix
   - name: community.docker
   - name: community.general
-  - name: vladgh.samba
+  - name: https://github.com/vladgh/ansible-collection-vladgh-samba
+    version: main
+    type: git
